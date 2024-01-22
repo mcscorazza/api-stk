@@ -24,4 +24,5 @@ Route::prefix('auth')->group(function(){
     Route::post('login', [LoginController::class, 'login']);
     Route::post('logout', [LoginController::class, 'logout']);
     Route::post('register', [RegisterController::class, 'register']);
+    Route::get('teste', function() { return "GET API OK!"; });
 });
